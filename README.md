@@ -1,4 +1,4 @@
-# Monkey Blog (cljs versin)
+# Monkey Blog (cljs version)
 
 This is a full [ClojureScript](https://clojurescript.org/) version of Monkey blog app.
 The blog app is very simple, it allows you to create a new entry for a given date,
