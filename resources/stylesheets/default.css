@@ -1,0 +1,193 @@
+body {
+    font-family: Verdana, Arial;
+    font-size: 10pt;
+}
+
+td {
+    font-family: Verdana, Arial;
+    font-size: 10pt;
+}
+
+.header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+    border-top: solid 1px #008080;
+}
+
+.site_title {
+    font-size: 30pt;
+    color: #008080;
+}
+
+.site_title a:hover {
+    text-decoration: none;
+}
+
+.content {
+    width: 650px;
+}
+
+.links {
+    margin-left: 150px;
+    padding: 5px;
+    text-align: right;
+}
+
+.links section {
+    margin-bottom: 10px;
+}
+
+.links a {
+    display: block;
+}
+
+.links .title {
+    color: black;
+    border-bottom: solid 1px black;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-left: 150px;
+}
+
+.entry {
+    margin: 5px 0px 10px 0px;
+    padding: 10px 10px 10px 150px;
+    background: #e0eee0;
+}
+
+.entry .title {
+    font-size: 15pt;
+    background: #d0ddd0;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.entry .title a {
+    color: black;
+}
+
+.entry .title a:hover {
+    text-decoration: none;
+}
+
+.entry p {
+    margin-left: 0px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.entry .actions {
+    margin-top: 10px;
+}
+
+.entry img {
+    /*
+	float: right;
+	width: 100px;
+	margin: 0 0 10px 10px;
+   */
+}
+
+.entry code {
+    text-align: left;
+}
+
+.entry_time {
+    font-size: 8pt;
+    color: #b0bbb0;
+    text-align: right;
+}
+
+.entry_time a {
+    color: #b0bbb0;
+}
+
+.journal_time {
+    color: #b0bbb0;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #008080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:vlink {
+    color: #d0ddd0;
+}
+
+.form-entry {
+    margin-top: 10px;
+}
+
+.error {
+    padding: 5px;
+    margin-top: 10px;
+    border: solid 1px;
+    color: white;
+    background-color: #ff8080;
+    border-color: #ff4040;
+}
+
+.notification {
+    padding: 5px;
+    margin-top: 10px;
+    border: solid 1px;
+    color: black;
+    background-color: #80c0ff;
+    border-color: #40a0ff;
+}
+
+.content .error {
+    margin-left: 150px;
+}
+
+.content .notification {
+    margin-left: 150px;
+}
+
+.link-btn {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: Verdana, Arial;
+    text-decoration: none;
+    color: #008080;
+}
+
+.link-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.count {
+    /*    width: 100px; */
+    font-size: 0.75em;
+}
+
+.expanded {
+    font-weight: bold;
+}
+
+.match {
+    font-style: italic;
+}
+
+label {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
