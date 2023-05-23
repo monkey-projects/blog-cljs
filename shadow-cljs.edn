@@ -19,4 +19,8 @@
 
   :test
   {:target :browser-test
-   :test-dir "out/test"}}}
+   :test-dir "out/test"}
+
+  :test-ci
+  {:target :node-test
+   :output-to "out/node-tests.js"}}}
