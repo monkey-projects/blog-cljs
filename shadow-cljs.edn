@@ -10,7 +10,9 @@
  [[re-frame "1.3.0"]
   [cljsjs/react "18.2.0-0"]
   [cljsjs/react-dom "18.2.0-0"]
-  [com.degel/re-frame-firebase "0.8.0"]]
+  [com.degel/re-frame-firebase "0.8.0"]
+  [day8.re-frame/test "0.1.5"]
+  [metosin/reitit-frontend "0.7.0-alpha4"]]
 
  :builds
  {:app

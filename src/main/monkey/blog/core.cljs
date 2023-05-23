@@ -1,6 +1,10 @@
 (ns monkey.blog.core
-  (:require [reagent.core :as r]
-            [reagent.dom :as rdom]))
+  (:require [monkey.blog.routing :as routing]
+            [monkey.blog.subs]
+            [monkey.blog.views]
+            [reagent.core :as r]
+            [reagent.dom :as rdom]
+            [reitit.frontend.easy :as rfe]))
 
 (defn header []
   [:div.header
@@ -16,10 +20,11 @@
 (defn main []
   [:div.main
    [header]
-   [:p "Content goes here"]
+   [:p "Loading..."]
    [footer]])
 
 (defn ^:dev/after-load reload! []
+  (routing/start!)
   (let [root (js/document.getElementById "app")]
     (rdom/unmount-component-at-node root)
     (rdom/render [main] root)))
