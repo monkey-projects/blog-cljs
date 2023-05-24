@@ -11,3 +11,14 @@
      (is (nil? (sut/on-route-change :test-match :test-history)))
      (is (= :test-match (:route/current @app-db))))))
 
+(deftest current-sub
+  (let [c (rf/subscribe [:route/current])]
+
+    (testing "exists"
+      (is (some? c)))
+
+    (testing "returns current route from db"
+      (is (empty? (reset! app-db {})))
+      (is (nil? @c))
+      (is (not-empty (reset! app-db {:route/current :test-route})))
+      (is (= :test-route @c)))))

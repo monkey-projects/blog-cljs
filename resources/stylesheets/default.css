@@ -18,12 +18,12 @@ td {
     border-top: solid 1px #008080;
 }
 
-.site_title {
+.site-title {
     font-size: 30pt;
     color: #008080;
 }
 
-.site_title a:hover {
+.site-title a:hover {
     text-decoration: none;
 }
 
@@ -99,17 +99,17 @@ p {
     text-align: left;
 }
 
-.entry_time {
+.entry-time {
     font-size: 8pt;
     color: #b0bbb0;
     text-align: right;
 }
 
-.entry_time a {
+.entry-time a {
     color: #b0bbb0;
 }
 
-.journal_time {
+.journal-time {
     color: #b0bbb0;
     margin-top: 5px;
 }

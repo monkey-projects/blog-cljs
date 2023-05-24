@@ -3,6 +3,11 @@
             [reitit.frontend :as f]
             [reitit.frontend.easy :as rfe]))
 
+(rf/reg-sub
+ :route/current
+ (fn [db _]
+   (:route/current db)))
+
 (rf/reg-event-db
  :route/goto
  (fn [db [_ match]]
