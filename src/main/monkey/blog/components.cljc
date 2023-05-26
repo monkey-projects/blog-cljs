@@ -38,21 +38,13 @@
 
 (defn error []
   (let [e (rf/subscribe [:alerts/error])]
-    (when @e
-      [:div.error @e])))
+    (when-let [{:keys [message retry]} @e]
+      [:div.error
+       message
+       (when retry
+         [evt-link retry "retry"])])))
 
 (defn notification []
   (let [e (rf/subscribe [:alerts/notification])]
     (when @e
       [:div.notification @e])))
-
-(defn with-layout
-  "Wraps given `p` component in the default layout, with the specified links to show"
-  [links p]
-  [:table {:width "100%" :cell-padding 0}
-   [:tbody
-    [:tr
-     [:td {:valign "top" :width "100%"}
-      p]
-     [:td {:valign "top" :align "right" :nowrap "true"}
-      [:div.links links]]]]])

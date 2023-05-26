@@ -1,7 +1,9 @@
 (ns monkey.blog.core
   (:require [com.degel.re-frame-firebase :as firebase]
             [monkey.blog.alerts]
+            [monkey.blog.components :as c]
             [monkey.blog.firebase]
+            [monkey.blog.journal.views]
             [monkey.blog.login]
             [monkey.blog.routing :as routing]
             [monkey.blog.subs]
@@ -24,9 +26,12 @@
 
 (defn main []
   (let [p (rf/subscribe [:panels/current])]
-    (if (nil? @p)
-      [:p "No panel"]
-      [@p])))
+    [:<>
+     [c/error]
+     [c/notification]
+     (if (nil? @p)
+       [:p "No panel"]
+       [@p])]))
 
 (defn ^:dev/after-load reload! []
   (routing/start!)

@@ -18,5 +18,5 @@
     (rf/dispatch-sync (vec (conj evt (get-value e))))))
 
 (defn extract-error [e]
-  (or (:status-text e)
-      (str e)))
+  #?(:cljs (or (.-message e)
+              (str e))))
