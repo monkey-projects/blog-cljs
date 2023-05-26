@@ -14,6 +14,7 @@ td {
 }
 
 .footer {
+    clear: both;
     margin-top: 50px;
     border-top: solid 1px #008080;
 }
@@ -28,11 +29,12 @@ td {
 }
 
 .content {
+    float: left;
     width: 650px;
 }
 
 .links {
-    margin-left: 150px;
+    float: right;
     padding: 5px;
     text-align: right;
 }
@@ -55,13 +57,13 @@ p {
     margin-left: 150px;
 }
 
-.entry {
+.card {
     margin: 5px 0px 10px 0px;
     padding: 10px 10px 10px 150px;
     background: #e0eee0;
 }
 
-.entry .title {
+.card .title {
     font-size: 15pt;
     background: #d0ddd0;
     margin-left: -10px;
@@ -69,25 +71,25 @@ p {
     padding-left: 10px;
 }
 
-.entry .title a {
+.card .title a {
     color: black;
 }
 
-.entry .title a:hover {
+.card .title a:hover {
     text-decoration: none;
 }
 
-.entry p {
+.card p {
     margin-left: 0px;
     margin-right: 10px;
     text-align: justify;
 }
 
-.entry .actions {
+.card .actions {
     margin-top: 10px;
 }
 
-.entry img {
+.card img {
     /*
 	float: right;
 	width: 100px;
@@ -95,7 +97,7 @@ p {
    */
 }
 
-.entry code {
+.card code {
     text-align: left;
 }
 

@@ -4,13 +4,7 @@
             [re-frame.core :as rf]
             [re-frame.db :refer [app-db]]))
 
-(reset! sut/panels {})
 (rf/clear-subscription-cache!)
-
-#_(deftest reg-panel
-  (testing "adds to panels"
-    (is (some? (sut/reg-panel ::test :test-panel)))
-    (is (= :test-panel (get @sut/panels ::test)))))
 
 (deftest panels-all
   (let [p (rf/subscribe [:panels/all])]

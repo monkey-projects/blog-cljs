@@ -2,8 +2,6 @@
   (:require [re-frame.core :as rf]
             [re-frame.db :as rdb]))
 
-(defonce panels (atom {}))
-
 (defn reg-panel [route-name panel]
   (swap! rdb/app-db assoc-in [::panels route-name] panel))
 

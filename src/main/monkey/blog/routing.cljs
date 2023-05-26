@@ -14,7 +14,8 @@
    (assoc db :route/current match)))
 
 (def router (f/router [["/" ::root]
-                       ["/about" ::about]]))
+                       ["/journal" ::journal]
+                       ["/login" ::login]]))
 
 (defn on-route-change [match history]
   (println "Route changed:" match)
